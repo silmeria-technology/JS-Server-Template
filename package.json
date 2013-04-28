@@ -15,7 +15,9 @@
     "async": "0.2.5",
     "node-po": "0.1.2",
     "btoa": "1.1.0",
-    "mustache": "0.7.0"
+    "mustache": "0.7.0",
+    "express": "3.x",
+    "forever": "*"
   },
   "scripts": {
     "install": "npm install -g jake"

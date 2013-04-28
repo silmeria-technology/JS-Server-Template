@@ -32,3 +32,13 @@ desc("runs jshint - jake lint [path1] [path2]");
 task('lint', [], function () {
     require('./build/lint').lint(complete, Array.prototype.slice.call(arguments));
 }, true);
+
+desc("starts server in forever");
+task('server-start', [], function () {
+    require('./build/server').start();
+});
+
+desc("stop server in forever");
+task('server-stop', [], function () {
+    require('./build/server').stop();
+});
